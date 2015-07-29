@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150729141025) do
+ActiveRecord::Schema.define(version: 20150729181418) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,8 @@ ActiveRecord::Schema.define(version: 20150729141025) do
     t.datetime "updated_at",  null: false
     t.integer  "account_id"
     t.string   "type"
+    t.decimal  "amount"
+    t.string   "state"
   end
 
   create_table "accounts", force: :cascade do |t|
@@ -37,6 +39,7 @@ ActiveRecord::Schema.define(version: 20150729141025) do
     t.integer  "zipcode"
     t.string   "state"
     t.integer  "employees"
+    t.decimal  "balance"
   end
 
   add_index "accounts", ["employees"], name: "index_accounts_on_employees", using: :btree
