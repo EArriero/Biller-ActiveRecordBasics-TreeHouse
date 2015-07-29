@@ -1,6 +1,6 @@
 Asset: Portfolio.
 
-Live Site: treebook-p.herokuapp.com/feed
+Live Site: http://biller-p.herokuapp.com/
 
 Biller is a web app which is part of my portfolio, it was created following the course “ActiveRecord Basics” from the track Rails Development in TeamTreeHouse.com.
 
