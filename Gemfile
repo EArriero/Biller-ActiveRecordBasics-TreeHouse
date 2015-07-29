@@ -7,6 +7,7 @@ gem 'rails', '4.2.1'
 gem 'faker'
 gem 'state_machines'
 gem 'state_machines-activerecord'
+gem 'paper_trail'
 
 # Use postgresql as the database for Active Record
 gem 'pg'
