@@ -18,6 +18,8 @@ Rails.application.routes.draw do
   resources :employees do
     resources :time_entries
   end
+
+  root 'employees#index'
   # Example resource route with options:
   #   resources :products do
   #     member do
